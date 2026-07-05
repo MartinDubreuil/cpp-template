@@ -1,0 +1,4 @@
+ignored:
+  - DL3008 # https://github.com/hadolint/hadolint/wiki/DL3008
+  - DL3013 # https://github.com/hadolint/hadolint/wiki/DL3013
+no-color: false # https://github.com/michaellzc/vscode-hadolint/issues/44#issuecomment-808756114

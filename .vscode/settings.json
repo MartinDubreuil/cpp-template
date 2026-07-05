@@ -1,0 +1,11 @@
+{
+    "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "clangd.arguments": [
+        "--query-driver=/usr/bin/gcc,/usr/bin/g++",
+        "--compile-commands-dir=${workspaceFolder}/build/"
+    ],
+    "markdown.validate.enabled": true
+}

@@ -1,0 +1,179 @@
+---
+#Checks: '-*,readability-identifier-naming'
+Checks:
+  - boost-use-to-string
+  - bugprone-*
+  # Disabled because it has too much counter-examples
+  - -bugprone-easily-swappable-parameters
+  - cert-*
+  - clang-analyzer-*
+  - clang-diagnostic-*
+  - cppcoreguidelines-*
+  # We don't have std::span
+  - -cppcoreguidelines-pro-bounds-array-to-pointer-decay
+  - -cppcoreguidelines-pro-bounds-pointer-arithmetic
+  # Redirect to readability-magic-numbers
+  - -cppcoreguidelines-avoid-magic-numbers
+  # Redirect to misc-unconventional-assign-operator
+  - -cppcoreguidelines-c-copy-assignment-signature
+  # Redirect to modernize-use-override
+  - -cppcoreguidelines-explicit-virtual-functions
+  # Redirect to misc-non-private-member-variables-in-classes
+  - -cppcoreguidelines-non-private-member-variables-in-classes
+  - google-default-arguments
+  - google-explicit-constructor
+  - google-build-namespaces
+  - google-build-explicit-make-pair
+  - google-global-names-in-headers
+  - google-readability-casting
+  - google-runtime-int
+  - hicpp-*
+  - llvm-namespace-comment
+  - misc-*
+  - modernize-*
+  # Disabled not in conventions
+  - -modernize-use-trailing-return-type
+  - performance-*
+  - readability-*
+  - readability-redundant-access-specifiers
+  - readability-identifier-length
+
+CheckOptions:
+  - key: readability-identifier-naming.AbstractClassCase
+    value: "CamelCase"
+  - key: readability-identifier-naming.ClassCase
+    value: "CamelCase"
+  - key: readability-identifier-naming.ClassConstantCase
+    value: "UPPER_CASE"
+  - key: readability-identifier-naming.ClassConstantPrefix
+    value: "ms_"
+  - key: readability-identifier-naming.ClassMemberCase
+    value: "UPPER_CASE"
+  - key: readability-identifier-naming.ClassMemberPrefix
+    value: "ms_"
+  - key: readability-identifier-naming.ClassMethodCase
+    value: "camelBack"
+  - key: readability-identifier-naming.ConstantCase
+    value: "lower_case"
+  - key: readability-identifier-naming.ConstantMemberCase
+    value: "lower_case"
+  - key: readability-identifier-naming.ConstantParameterCase
+    value: "lower_case"
+  - key: readability-identifier-naming.ConstantParameterPrefix
+    value: "p_"
+  - key: readability-identifier-naming.ConstantPointerParameterCase
+    value: "lower_case"
+  - key: readability-identifier-naming.ConstexprFunctionCase
+    value: "camelBack"
+  - key: readability-identifier-naming.ConstexprMethodCase
+    value: "camelBack"
+  - key: readability-identifier-naming.ConstexprVariableCase
+    value: "UPPER_CASE"
+  - key: readability-identifier-naming.EnumCase
+    value: "CamelCase"
+  - key: readability-identifier-naming.EnumConstantCase
+    value: "UPPER_CASE"
+  - key: readability-identifier-naming.FunctionCase
+    value: "camelBack"
+  - key: readability-identifier-naming.GlobalConstantCase
+    value: "UPPER_CASE"
+  - key: readability-identifier-naming.GlobalConstantPrefix
+    value: "g_"
+  - key: readability-identifier-naming.GlobalConstantPointerCase
+    value: "UPPER_CASE"
+  - key: readability-identifier-naming.GlobalConstantPointerPrefix
+    value: "g_"
+  - key: readability-identifier-naming.GlobalFunctionCase
+    value: "camelBack"
+  - key: readability-identifier-naming.GlobalPointerCase
+    value: "UPPER_CASE"
+  - key: readability-identifier-naming.GlobalPointerPrefix
+    value: "g_"
+  - key: readability-identifier-naming.GlobalVariableCase
+    value: "UPPER_CASE"
+  - key: readability-identifier-naming.GlobalVariablePrefix
+    value: "g_"
+  - key: readability-identifier-naming.InlineNamespaceCase
+    value: "lower_case"
+  - key: readability-identifier-naming.LocalConstantCase
+    value: "lower_case"
+  - key: readability-identifier-naming.LocalConstantPointerCase
+    value: "lower_case"
+  - key: readability-identifier-naming.LocalPointerCase
+    value: "lower_case"
+  - key: readability-identifier-naming.LocalVariableCase
+    value: "lower_case"
+  - key: readability-identifier-naming.MacroDefinitionCase
+    value: "UPPER_CASE"
+  - key: readability-identifier-naming.MemberCase
+    value: "lower_case"
+  - key: readability-identifier-naming.MemberPrefix
+    value: "m_"
+  - key: readability-identifier-naming.MethodCase
+    value: "camelBack"
+  - key: readability-identifier-naming.NamespaceCase
+    value: "lower_case"
+  - key: readability-identifier-naming.ParameterCase
+    value: "lower_case"
+  - key: readability-identifier-naming.ParameterPrefix
+    value: "p_"
+  - key: readability-identifier-naming.ParameterPackCase
+    value: "lower_case"
+  - key: readability-identifier-naming.PointerParameterCase
+    value: "lower_case"
+  - key: readability-identifier-naming.PrivateMemberCase
+    value: "lower_case"
+  - key: readability-identifier-naming.PrivateMemberPrefix
+    value: "m_"
+  - key: readability-identifier-naming.PrivateMethodCase
+    value: "camelBack"
+  - key: readability-identifier-naming.ProtectedMemberCase
+    value: "lower_case"
+  - key: readability-identifier-naming.ProtectedMemberPrefix
+    value: "m_"
+  - key: readability-identifier-naming.ProtectedMethodCase
+    value: "camelBack"
+  - key: readability-identifier-naming.PublicMemberCase
+    value: "lower_case"
+  - key: readability-identifier-naming.PublicMemberPrefix
+    value: ""
+  - key: readability-identifier-naming.PublicMethodCase
+    value: "camelBack"
+  - key: readability-identifier-naming.ScopedEnumConstantCase
+    value: "UPPER_CASE"
+  - key: readability-identifier-naming.StaticConstantCase
+    value: "UPPER_CASE"
+  - key: readability-identifier-naming.StaticConstantPrefix
+    value: "s_"
+  - key: readability-identifier-naming.StaticVariableCase
+    value: "UPPER_CASE"
+  - key: readability-identifier-naming.StaticVariablePrefix
+    value: "s_"
+  - key: readability-identifier-naming.StructCase
+    value: "CamelCase"
+  - key: readability-identifier-naming.TemplateParameterCase
+    value: "upper_case"
+  - key: readability-identifier-naming.TemplateTemplateParameterCase
+    value: "CamelCase"
+  - key: readability-identifier-naming.TypeAliasCase
+    value: "aNy_CasE"
+  - key: readability-identifier-naming.TypedefCase
+    value: "aNy_CasE"
+  - key: readability-identifier-naming.TypeTemplateParameterCase
+    value: "CamelCase"
+  - key: readability-identifier-naming.TemplateParameterPrefix
+    value: "T"
+  - key: readability-identifier-naming.UnionCase
+    value: "CamelCase"
+  - key: readability-identifier-naming.ValueTemplateParameterCase
+    value: "CamelCase"
+  - key: readability-identifier-naming.VariableCase
+    value: "lower_case"
+  - key: readability-identifier-naming.VirtualMethodCase
+    value: "camelBack"
+  - key: misc-non-private-member-variables-in-classes.IgnoreClassesWithAllMemberVariablesBeingPublic
+    value: "true"
+  - key: cppcoreguidelines-special-member-functions.AllowSoleDefaultDtor
+    value: "true"
+  - key: readability-identifier-naming.PointerParameterPrefix
+    value: "p_"

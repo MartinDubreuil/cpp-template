@@ -1,0 +1,87 @@
+{
+    "[dockercompose]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[github-actions-workflow]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "[proto]": {
+        "editor.defaultFormatter": "DrBlury.protobuf-vsc"
+    },
+    "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+    // "aws.telemetry": false,
+    // "C_Cpp.clang_format_path": "/usr/bin/clang-format-21",
+    // "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+    "C_Cpp.codeAnalysis.clangTidy.useBuildPath": true,
+    "C_Cpp.codeAnalysis.maxConcurrentThreads": 22,
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "clangd.arguments": [
+        "--query-driver=/usr/bin/gcc,/usr/bin/g++",
+        "--compile-commands-dir=${workspaceFolder}/build/"
+    ],
+    "clangd.checkUpdates": true,
+    "cmake.parallelJobs": 8,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "files.associations": {
+        "*.conf": "json",
+        "*.gpx": "xml",
+        "*.txt": "Log"
+    },
+    "github-enterprise.uri": "https://navya-mobility.ghe.com",
+    "github.copilot.advanced": {
+        "authProvider": "github-enterprise"
+    },
+    "gitlens.ai.model": "vscode",
+    "gitlens.ai.vscode.model": "copilot:claude-opus-4.6",
+    "gitlens.graph.autoFetch.enabled": true,
+    "gitlens.views.scm.grouped.views": {
+        "branches": true,
+        "commits": true,
+        "contributors": true,
+        "fileHistory": false,
+        "launchpad": false,
+        "remotes": true,
+        "repositories": true,
+        "searchAndCompare": true,
+        "stashes": true,
+        "tags": true,
+        "worktrees": true
+    },
+    "protobuf.breaking.enabled": true,
+    "protobuf.clangFormat.enabled": true,
+    "protobuf.clangFormat.path": "/usr/bin/clang-format-21",
+    "protobuf.formatOnSave": true,
+    "remote.SSH.configFile": "~/.ssh/config.d/stg.conf",
+    "security.workspace.trust.enabled": false,
+    "settingsSync.ignoredSettings": [
+        "-C_Cpp.clang_format_path",
+        "-C_Cpp.codeAnalysis.clangTidy.path",
+        "clangd.arguments",
+        "cmake.buildDirectory",
+        "cmake.parallelJobs",
+        "sonarlint.automaticAnalysis",
+        "sonarlint.pathToCompileCommands"
+    ],
+    "sonarlint.automaticAnalysis": false,
+    "sonarlint.connectedMode.connections.sonarqube": [
+        {
+            "connectionId": "https-sonar-navya-tech",
+            "serverUrl": "https://sonar.navya.tech"
+        }
+    ],
+    "sonarlint.disableTelemetry": true,
+    "sonarlint.pathToCompileCommands": "${workspaceFolder}/build/compile_commands.json",
+    "terminal.integrated.scrollback": 10000,
+    "todo-tree.ripgrep.ripgrep": "/usr/bin/rg",
+    "workbench.editorAssociations": {
+        "{git,gitlens,chat-editing-snapshot-text-model,copilot,git-graph,git-graph-3}:/**/*.qrc": "default",
+        "{git,gitlens,conflictResolution,vscode-local-history}:/**/*.{asl.json,asl.yaml,asl.yml}": "default",
+        "{git,gitlens,conflictResolution,vscode-local-history}:/**/*.tc.json": "default",
+        "{hexdiff}:/**/*.*": "hexEditor.hexedit",
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.qrc": "qt-core.qrcEditor"
+    }
+}

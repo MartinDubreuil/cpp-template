@@ -1,0 +1,17 @@
+Completion:
+  HeaderInsertion: Never
+# Diagnostics:
+#   Suppress:
+#     - expr_not_cce
+#   ClangTidy:
+#     FastCheckFilter: None
+#   # MissingIncludes: Strict
+InlayHints:
+  ParameterNames: false
+  # DeducedTypes: true
+  # DefaultArguments: true
+  BlockEnd: true
+Hover:
+  ShowAKA: true
+Documentation:
+  CommentFormat: Doxygen

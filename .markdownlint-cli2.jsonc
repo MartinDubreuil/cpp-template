@@ -1,0 +1,6 @@
+{
+    "config": {
+        "MD013": true // https://github.com/DavidAnson/vscode-markdownlint#configure
+    },
+    "fix": true // To auto fix pre-commit hook
+}
